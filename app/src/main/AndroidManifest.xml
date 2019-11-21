@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Libros_act"></activity>
+        <activity android:name=".Sql_lite_example_act"></activity>
+        <activity android:name=".Libros_act" />
         <activity android:name=".Info_act" />
         <activity android:name=".Home_act" />
         <activity android:name=".MainActivity">

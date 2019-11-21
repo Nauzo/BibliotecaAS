@@ -76,6 +76,28 @@ public class Libros_act extends AppCompatActivity {
             txt2.getText();
 
         }
+        if(sp.getSelectedItem().equals("Como ser chaleco amarillo"))
+        {
+            int cant = Integer.valueOf(edt1.getText().toString());
+            int prestamo = Integer.valueOf(edt2.getText().toString());
+            int precioLibro = listaCostos[3];
+
+            int resultado = (precioLibro*cant)+prestamo;
+
+            txt2.setText("El valor total a pagar es:" + resultado);
+            txt2.getText();
+        }
+        if(sp.getSelectedItem().equals("Manifiesto Comunista"))
+        {
+            int cant = Integer.valueOf(edt1.getText().toString());
+            int prestamo = Integer.valueOf(edt2.getText().toString());
+            int precioLibro = listaCostos[4];
+
+            int resultado = (precioLibro*cant)+prestamo;
+
+            txt2.setText("El valor total a pagar es:" + resultado);
+            txt2.getText();
+        }
     }
 }
 

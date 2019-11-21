@@ -63,8 +63,8 @@ public class Home_act extends AppCompatActivity {
     }
 
     public void librosact(View view){
-        String array[] = {"Faremheit","Revival","Tesla"};
-        int arrayCostos[] = {5000,12000,25000,10000,4500};
+        String array[] = {"Faremheit","Revival","Tesla","Como ser chaleco amarillo","Manifiesto Comunista"};
+        int arrayCostos[] = {5000,12000,25000,1000,4500};
         Intent i = new Intent(this,Libros_act.class);
         i.putExtra("libros",array);
         i.putExtra("valores",arrayCostos);
