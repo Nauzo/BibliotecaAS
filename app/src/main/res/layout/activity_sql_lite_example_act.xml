@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sql_lite_example_act">
+    tools:context=".Base_act">
 
     <TextView
         android:id="@+id/textView2"
@@ -71,6 +71,7 @@
             android:id="@+id/button_añadir_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="añadir_libro"
             android:text="Añadir Libro" />
 
         <Button
