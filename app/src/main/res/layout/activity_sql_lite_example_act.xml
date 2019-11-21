@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.363">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editText_codigo_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -40,7 +40,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editText3_nombre_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,7 +48,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editText2_precio_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -68,19 +68,19 @@
         app:layout_constraintVertical_bias="0.835">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button_añadir_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Añadir Libro" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button_modificar_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Modificar Libros" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_eliminar_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Eliminar Libro" />

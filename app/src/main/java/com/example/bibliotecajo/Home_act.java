@@ -71,4 +71,10 @@ public class Home_act extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void enviarsqlact (View view){
+
+        Intent i = new Intent(this,Sql_lite_example_act.class);
+        startActivity(i);
+    }
+
 }
