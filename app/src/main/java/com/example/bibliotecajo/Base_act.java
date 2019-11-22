@@ -32,9 +32,9 @@ public class Base_act extends AppCompatActivity {
         if (!edt1.getText().toString().isEmpty())
         {
             ContentValues registro = new ContentValues();
-            registro.put("codigo", edt1.getText().toString());
-            registro.put("nombre", edt3.getText().toString());
-            registro.put("precio",edt2.getText().toString());
+            registro.put("codigo_id",edt1.getText().toString());
+            registro.put("nombre",edt2.getText().toString());
+            registro.put("precio",edt3.getText().toString());
 
             BaseDeDatosLibros.insert("Libros",null,registro);
             BaseDeDatosLibros.close();
@@ -43,5 +43,37 @@ public class Base_act extends AppCompatActivity {
         }
 
     }
+    public void eliminar_libro(View view){
 
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"Gestion", null, 1);
+        SQLiteDatabase BaseDeDatosLibros = admin.getWritableDatabase();
+
+        String codigo = edt1.getText().toString();//obtengo el codigo para eliminar mi prooducto
+
+        BaseDeDatosLibros.delete("Libros", "codigo_id="+codigo,null);
+        BaseDeDatosLibros.close();
+
+        Toast.makeText(this,"A eliminado el Libro ingresado con el codigo: "+codigo,Toast.LENGTH_LONG).show();
+    }
+
+    public void modificar_libro(View view){
+
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"Gestion", null, 1);
+        SQLiteDatabase BaseDeDatosLibros = admin.getWritableDatabase();
+
+        ContentValues cont = new ContentValues();
+        cont.put("codigo_id",edt1.getText().toString());
+        cont.put("nombre",edt2.getText().toString());
+        cont.put("precio",edt3.getText().toString());
+
+        String codigo = edt1.getText().toString();//obtengo el codigo para eliminar mi prooducto
+
+        if (!edt1.getText().toString().isEmpty()){
+
+            BaseDeDatosLibros.update("Libros",cont,"codigo_id="+codigo,null);
+            Toast.makeText(this,"A modificado el libro con el codigo: "+codigo,Toast.LENGTH_LONG).show();
+
+        }
+
+    }
 }

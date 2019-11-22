@@ -16,7 +16,7 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase BaseDeDatosLibros) {
 
-        BaseDeDatosLibros.execSQL("CREATE TABLE Libros(codigo_id int primary key, nombre text, precio float)");
+        BaseDeDatosLibros.execSQL("CREATE TABLE Libros(codigo_id int primary key, nombre text, precio float)");//intentar otra vez pero con un int en vez de float
 
     }
 

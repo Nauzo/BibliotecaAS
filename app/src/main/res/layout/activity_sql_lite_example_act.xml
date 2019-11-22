@@ -78,12 +78,14 @@
             android:id="@+id/button_modificar_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="modificar_libro"
             android:text="Modificar Libros" />
 
         <Button
             android:id="@+id/button_eliminar_libro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="eliminar_libro"
             android:text="Eliminar Libro" />
     </LinearLayout>
 
